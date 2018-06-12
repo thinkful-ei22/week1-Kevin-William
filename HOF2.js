@@ -33,24 +33,26 @@ repeat2(hello2,4);
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
 const filteredNames = filter(myNames, function(name) {
-    // This is a "predicate function" - it's a function that only returns a boolean
-    return name[0] === 'R';
+// This is a "predicate function" - it's a function that only returns a boolean
+  return name[0] === 'R';
 });
 
-console.log(filteredNames) // => ['Rich', 'Ray']
+console.log(filteredNames);// => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
 
 // TASK: DEFINE YOUR FILTER FUNCTION BELOW:
 
 function filter(arr, fn){
-    let newArray = [];
-    for(let i = 0; i<arr.length; i++){
-      if(fn(arr[i])=== true){
-          newArray.push(arr[i]);
-      }
+  let newArray = [];
+  for(let i = 0; i<arr.length; i++){
+    if(fn(arr[i])=== true){
+      newArray.push(arr[i]);
     }
-    return newArray;
+  }
+  return newArray;
 }
-filter(myNames, filteredNames);
+console.log(filter(myNames, function (name){
+  return name[0] === 'J';
+}));
 
 
