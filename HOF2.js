@@ -1,5 +1,5 @@
 'use strict';
-const repeat = function (fn, n){
+/*const repeat = function (fn, n){
   for (let i = 0; i < n; i++){
     fn();
   }
@@ -26,4 +26,12 @@ const repeat2 = function (fn, n){
 };
 
 repeat2(hello2,4);
+*/
+/*=============================================*/
+
+const filter = function (arr, fn){
+  
+}
+
+
 
